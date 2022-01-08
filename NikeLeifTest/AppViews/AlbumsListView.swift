@@ -29,6 +29,7 @@ struct AlbumsListView: View {
                 }
                 .navigationBarTitle("Albums")
             }
+            .navigationViewStyle(.stack)
             .disabled(musicFetcher.isFetching)
             .blur(radius: musicFetcher.isFetching ? 3 : 0)
             

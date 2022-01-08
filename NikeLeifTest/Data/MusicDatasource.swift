@@ -39,7 +39,7 @@ extension Datasource {
  Datasouce for all Music Data
  */
 class MusicDatasource: Datasource {
-    let musicFeedUrl = "https://rss.itunes.apple.com/api/v1/us/itunes-music/top-albums/all/100/explicit.json"
+    let musicFeedUrl = "https://rss.applemarketingtools.com/api/v2/us/music/most-played/50/albums.json"
     
     func fetchMusicFeed(completion: @escaping (MusicFeed) -> Void) {
         fetchJsonData(jsonUrl: musicFeedUrl) { (data) in
